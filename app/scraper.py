@@ -47,3 +47,5 @@ if __name__ == "__main__":
     full_text = legacy.get("full_text")
     print(favourites_count)
     print(full_text)
+    
+    # git remote set-url origin git@github.com:kang99841/twitter_scraper_app.git
