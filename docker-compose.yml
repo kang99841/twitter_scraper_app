@@ -8,7 +8,6 @@ services:
       - "5000:5000"
     environment:
       - DATABASE_URL=${DATABASE_URL}
-      - SCRAPFLY_API_KEY=${SCRAPFLY_API_KEY}
     depends_on:
       - db
 

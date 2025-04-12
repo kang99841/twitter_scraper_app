@@ -18,6 +18,10 @@
   ],
 
   "remoteUser": "root",
-  "runArgs": ["--cap-add=SYS_ADMIN", "--shm-size=1gb"]
+  "runArgs": ["--cap-add=SYS_ADMIN", "--shm-size=1gb"],
+  "command": "python3 -m app.api",
+  "postCreateCommand": "pip install --no-cache-dir -r requirements.txt",
+  "forwardPorts": [5000]
+
 }
 
