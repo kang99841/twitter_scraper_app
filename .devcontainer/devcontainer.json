@@ -1,0 +1,19 @@
+{
+  "name": "Twitter Scraper API",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "web",
+  "workspaceFolder": "/app",
+
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "ms-azuretools.vscode-docker"
+  ],
+
+  "remoteUser": "root",
+  "runArgs": ["--cap-add=SYS_ADMIN", "--shm-size=1gb"]
+}
+
