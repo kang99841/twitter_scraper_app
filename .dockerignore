@@ -1,0 +1,10 @@
+kang_env
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.db
+.env
+*.sqlite3
+.vscode
+.git
