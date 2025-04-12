@@ -36,4 +36,14 @@ def scrape_tweet(url: str) -> dict:
 
 
 if __name__ == "__main__":
-    print(scrape_tweet("https://twitter.com/Scrapfly_dev/status/1664267318053179398"))
+    url = "http://x.com/elonmusk/status/1910204495360843813"
+    results = scrape_tweet(url)
+    core = results.get("core")
+    legacy = results.get("legacy")
+    
+    # print(core.get("user_results").get("result").get("legacy").get("favourites_count"))
+    
+    favourites_count = core.get("user_results").get("result").get("legacy").get("favourites_count")
+    full_text = legacy.get("full_text")
+    print(favourites_count)
+    print(full_text)
