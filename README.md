@@ -37,6 +37,23 @@ OS Environment  Windows + WSL2
 API Framework   Flask
 Scraping Tool   Requests + BeautifulSoup / Playwright / Scrapfly.io
 Database        PostgreSQL
+
+Docker:
+Open the Command Palette:
+Press
+Ctrl+Shift+P (Windows/Linux)
+
+Cmd+Shift+P (macOS)
+
+Type and select:
+🔁 Dev Containers: Rebuild and Reopen in Container
+
+(Optional clean up)
+# Shut down any running containers
+docker compose down --volumes --remove-orphans
+
+# Remove dangling build cache
+docker builder prune -f
 Database Client DBeaver
 Containerization        Docker + Docker Compose
 Orchestration   Airflow
