@@ -41,7 +41,7 @@ if __name__ == "__main__":
     core = results.get("core")
     legacy = results.get("legacy")
     
-    # print(core.get("user_results").get("result").get("legacy").get("favourites_count"))
+    print(core.get("user_results").get("result").get("legacy").get("favourites_count"))
     
     favourites_count = core.get("user_results").get("result").get("legacy").get("favourites_count")
     full_text = legacy.get("full_text")
