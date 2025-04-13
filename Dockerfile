@@ -21,6 +21,10 @@ git openssh-client \
 # Install Python packages + browser deps
 RUN pip install --no-cache-dir playwright && playwright install --with-deps
 
+# Install Python dependencies from requirements.txt
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
 WORKDIR /app
 
 COPY . .
