@@ -1,3 +1,13 @@
+// Tells VS Code how to build and enter your dev container	
+// Use when you want to code inside container with VS Code
+
+  // Tells VS Code how to build and enter the container.
+  // Auto-installs extensions and Python requirements.
+  // Forwards ports for you (e.g., Flask server on port 5000).
+  // Mounts your project folder into /app.
+// Use this when you want a consistent dev environment across team members.
+
+
 {
   "name": "Twitter Scraper API",
   "dockerComposeFile": "../docker-compose.yml",

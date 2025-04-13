@@ -1,3 +1,11 @@
+# Runs and manages multi-container setup (e.g., app + db)	
+# When your app relies on other services like a database
+  # Starts both web (Flask app) and db (Postgres).
+  # Passes environment variable s like DB credentials.
+  # Connects services via Docker network (so db hostname just works).
+  # Mounts your code into the container.
+# Think of Compose as your orchestration tool to spin everything up together.
+
 version: '3.8'
 
 services:

@@ -58,3 +58,32 @@ Database Client DBeaver
 Containerization        Docker + Docker Compose
 Orchestration   Airflow
 Scheduling Trigger      curl to Flask API
+
+# Handy Docker Commands
+## Docker
+docker ps               # running containers
+docker images           # list images
+docker volume ls        # list volumes
+docker volume rm <v>    # delete volume
+docker exec -it <id> bash  # enter a container shell
+
+## Compose
+docker-compose up       # starts everything
+docker-compose down     # stops & removes containers
+docker-compose build    # (re)build containers
+docker-compose logs     # logs from all services
+
+## Dev container
+# From inside VS Code
+> Rebuild Container
+> Reopen in Container
+> Rebuild and Reopen in Container
+
+# Pro Tip:
+Use named volumes for databases, bind mounts for code.
+
+Don't rebuild unless needed — it'll save you time.
+
+Add a .devcontainer/.env to store shared secrets or configs.
+
+Avoid storing Git config inside the container — use your WSL2 Git setup or bind-mount it.

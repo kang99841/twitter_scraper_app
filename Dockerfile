@@ -1,3 +1,7 @@
+# Defines how your app container is built (Linux base, Python, dependencies)	
+# When you need a custom app image with system & Python packages
+# Think of it like setting up your dev machine, but for your app.
+
 FROM python:3.11-slim
 
 # Install system dependencies for Playwright
